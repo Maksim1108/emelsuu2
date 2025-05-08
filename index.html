@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <meta name="description" content="Эмел Суу - природная вода высшего качества из артезианских скважин. Доставка чистой воды в Бишкеке и области.">
+    <meta name="keywords" content="Эмел Суу, вода, доставка воды, артезианская вода, чистая вода, Бишкек">
+    <meta name="author" content="Эмел Суу">
+    <meta property="og:title" content="Эмел Суу - Чистая вода для вашего здоровья">
+    <meta property="og:description" content="Природная вода высшего качества с доставкой в Бишкеке">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emelsuu.kg">
+    <link rel="canonical" href="https://emelsuu.kg">
+    <title>Эмел Суу - Чистая вода для вашего здоровья | Доставка воды в Бишкеке</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            Эмел Суу
+        </div>
+        <nav class="main-nav" aria-label="Главное меню">
+            <a href="#about" class="nav-link">О продукте</a>
+            <a href="#benefits" class="nav-link">Преимущества</a>
+            <a href="#order" class="nav-link">Заказать</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
+        </nav>
+        <button class="mobile-menu-button" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="main-title">Эмел</h1>
+                <div id="model-container" aria-hidden="true"></div>
+                <h1 class="sub-title">Суу</h1>
+                <p class="tagline">Вода для вашего здоровья</p>
+                <a href="#order" class="cta-button" aria-label="Перейти к заказу">Заказать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">О нашей воде</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Эмел Суу - это природная вода высшего качества, добываемая из артезианских скважин в экологически чистом регионе. Наша вода проходит многоступенчатую систему очистки, сохраняя при этом все полезные минералы и микроэлементы.</p>
+                    <ul class="features-list">
+                        <li><span class="feature-icon">✓</span> Натуральный состав</li>
+                        <li><span class="feature-icon">✓</span> Без искусственных добавок</li>
+                        <li><span class="feature-icon">✓</span> Сбалансированный минеральный состав</li>
+                        <li><span class="feature-icon">✓</span> Строгий контроль качества</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="stats-section">
+        <div class="container">
+            <h2 class="section-title visually-hidden">Наши достижения</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Лет на рынке</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Тысяч литров доставлено</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Часа доставки</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title">Оформить заказ</h2>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Адрес доставки" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="volume" class="visually-hidden">Выберите объем</label>
+                    <select id="volume" required>
+                        <option value="5">5 литров</option>
+                        <option value="10">10 литров</option>
+                        <option value="19">19 литров</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Оформить заказ</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts" class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Контакты</h3>
+                <p><strong>Телефон:</strong>+996 (772) 777 074</p>
+                <p><strong>Email:</strong>emelkgz@gmail.com</p>
+                <p><strong>Адрес:</strong> Улица Расула Рыспаева, 8/1<br>
+                    с. Кок-Ой, Жумгальский район, Нарынская область</p>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.82653870702603!2d74.44278885817536!3d41.88755975639641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3899bb1b90b78d09%3A0x4bddcae9872a25ae!2z0K3QvNC10LstRW1lbA!5e0!3m2!1sru!2sru!4v1746556799732!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения Эмел Суу"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Эмел Суу. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="main.js" defer></script>
+<script src="stats.js" defer></script>
+</body>
+</html>
